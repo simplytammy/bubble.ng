@@ -1,0 +1,121 @@
+/*=========
+Fonts
+========*/
+@font-face {
+  font-family:'consola';
+  src: url("../font/CONSOLA.TTF");
+}
+@font-face {
+  font-family:'avenir-heavy';
+  src: url("../font/AvenirLTStd-Heavy.woff");
+}
+@font-face {
+  font-family:'consola-bold';
+  src: url("../font/CONSOLAB.TTF");
+}
+@font-face {
+  font-family:'avenir-black';
+  src: url("../font/AvenirLTStd-Black.woff");
+}
+
+
+
+*{
+  box-sizing: border-box;
+  font-family: 'consola', sans-serif !important;
+  overflow-x: hidden;
+}
+.container-fluid{
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+.holder {
+  padding: 1em 0;
+}
+
+.clear {
+  padding: 0 !important;
+}
+
+.bubble-link {
+  text-decoration: underline;
+  transition: .5s ease;
+}
+.bubble-link:hover {
+  color:#FFC107 !important;
+}
+
+/*===========
+Colours
+=========*/
+/*backgrounds*/
+.bubble-yellow {
+  background: #FFC107;
+}
+.bubble-black {
+  background: #000000;
+}
+.bubble-white {
+  background: #FFFFFF;
+}
+.bubble-gradient {
+  background: linear-gradient(to right, #FFC107 24%,#ffffff 24%);
+  height: 100vh;
+}
+/*texts*/
+.b-black {
+  color:#000000 !important;
+}
+
+.b-white {
+  color: #FFFFFF !important;
+}
+
+.b-yellow {
+  color: #FFC107 !important;
+}
+
+/*=======
+Buttons
+=======*/
+.bubble-button {
+  border-radius: 4px;
+  padding: 14px 13px;
+  font-size: 14px;
+  border: none;
+  font-family: 'consola', sans-serif !important;
+  text-decoration: none !important;
+  transition: .5s ease-in !important;
+}
+.bubble-button:hover { color: #FFFFFF;}
+.btn-hire {
+  color: #000000;
+}
+.btn-hire:hover {color:#000000;background: #FFFFFF;}
+.btn-work {
+  color: #FFFFFF;
+  border:1px solid #FFFFFF;
+}
+.btn-hello {
+  padding: 14px 40px !important;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.btn-call {
+  border-radius: 50%;
+  padding: 20px;
+  bottom: 23px;
+  right: 151px;
+  position: absolute;
+  z-index: 1070;
+  box-shadow:0px 12px 12px 0px rgba(0, 0, 0, 0.16);
+
+}
+ .btn-submit {
+  background: #000;
+  color: #ffffff;
+  padding: 14px 25px;
+  font-size: 14px;
+}
