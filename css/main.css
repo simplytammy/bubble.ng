@@ -1,0 +1,104 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'consola', sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* (Index => intro) */
+
+.index-intro {
+  min-height: 100vh !important;
+  background: #FFFFFF;
+}
+
+.index-intro .intro-mid {
+  position: relative;
+  height: 100vh;
+  padding: 0 !important;
+}
+
+.index-intro .intro-img-holder {
+  position: relative;
+  height: 80vh;
+}
+
+.index-intro .intro-img-holder .intro-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.index-intro .intro-mid .intro-mid-sub {
+  height: 20vh;
+  padding: 30px 49px;
+  overflow: hidden;
+
+}
+
+.index-intro .intro-text-holder {
+  padding: 25rem 6.8rem
+}
+
+.index-intro .intro-text-holder h1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+@media (max-width:744px) {
+
+  .index-intro .intro-mid,
+  .index-intro .intro-mid .intro-mid-sub {
+    height: auto !important;
+  }
+
+  .index-intro .intro-img-holder {
+    height: 50vh;
+  }
+
+  .index-intro .intro-text-holder {
+    padding: 8rem 2rem 3rem;
+  }
+
+}
+
+/* (index => Let's get you started)*/
+.get-started .get-started-box {
+  padding: 2em 1em;
+  margin: 30px auto;
+  transition: .5s ease-in-out;
+  min-height: 397px;
+  display: flex;
+  justify-content: center;
+}
+
+.get-started .get-started-box:hover {
+  background: #cccccc;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16) !important;
+
+}
+
+.get-started .get-started-box h3 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.get-started .get-started-box p {
+  padding: 3em 0;
+}
+
+.get-started .get-started-box p span {
+  text-decoration: underline;
+}
+
+.get-started .get-started-box a {
+  background: #000000 !important;
+  color: #FFFFFF !important;
+  font-weight: 900;
+}
+
+.get-started .get-started-box:hover a {
+  background: #FFC107 !important;
+}
