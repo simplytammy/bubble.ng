@@ -102,3 +102,199 @@ body {
 .get-started .get-started-box:hover a {
   background: #FFC107 !important;
 }
+
+/* ::: (indec => We've contributed code at:) :::*/
+/* .contributions {padding: 2rem 10rem}
+.contributions .project, .contributions .tesimonial {
+  height: 252px;
+}
+.contributions .project ,
+.contributions .testimonial {
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contributions .project h4 {
+  font-size: 16px;
+  color:#FFFFFF;
+  opacity: .6;
+}
+.contributions .project p {
+  font-size: 20px;
+  color:#FFFFFF;
+}
+.contributions .testimonial .q-mark{
+  font-size: 20px;
+  font-weight:900;
+}
+.contributions .testimonial .content {
+  font-size: 16px;
+}
+.contributions .testimonial .name {
+  font-size: 20px;
+  font-weight: 900;
+} */
+
+/* ::: (Hire Devs) ::: */
+
+/*========
+Hire
+========*/
+
+.hire-info {
+  padding: 16rem 6.8rem;
+  color: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width:744px) {
+  .hire-info {
+    padding: 8rem 2rem;
+    height:auto !important;
+  }
+}
+.hire-info h3 {
+  font-size: 22px;
+  font-weight: bolder !important;
+}
+.hire-info p {
+  font-size: 16px;
+} 
+.bubble-form-area {
+  padding: 16rem 3rem;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width:744px) {
+  .bubble-form-area {
+    padding: 5rem 0;
+    padding-bottom: 0 !important;
+    height:auto !important;
+  }
+  .bubble-form-area form {
+    padding: 1rem 2rem;
+  }
+}
+
+.bubble-form-area .bubble-form-header{
+  font-size:18px;
+  font-family:'avenir-heavy', sans-serif;
+  font-weight: bold;
+}
+.bubble-form-area input {
+  background-color:rgba(0, 0, 0, 0.2);
+  height: 41px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  margin-top: 24px;
+  color: #000000;
+  font-size: 14px;
+  font-family:'consola-bold', sans-serif;
+}
+.bubble-form-area input:focus {outline: none !important;}
+.bubble-form-area .text-area{
+  background-color:rgba(0, 0, 0, 0.2);
+  margin-top: 24px;
+  font-size: 14px;
+  font-family:'consola-bold', sans-serif;
+  box-sizing: border-box;
+  border: none;
+  height:61px;
+}
+
+.bubble-form-area .form-control::placeholder { 
+  color:rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-family: 'consola', sans-serif;
+ }
+
+ .bubble-form-area .form-control::placeholder { 
+  color:rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-family: 'consola', sans-serif;
+ }
+
+ .bubble-form-area .form-check {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.bubble-form-area .form-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.bubble-form-area .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bubble-form-area .form-check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.bubble-form-area .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.bubble-form-area .form-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.bubble-form-area .form-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bubble-form-area .form-check-label{
+ font-size: 13px;
+ color:black;
+}
+.bubble-form-area .bubble-more {
+  position: absolute;
+  padding:3rem;
+  width: 100%;
+  left:0;
+  bottom: 0;
+  color: #ffffff;
+}
+
+@media(max-width:744px) {
+ .bubble-form-area .bubble-more {
+    position: relative;
+    padding: 1rem 2rem;
+ }
+}
+.bubble-form-area .bubble-more h4 {
+  font-size: 15px;
+}
+.bubble-form-area .bubble-more p {
+  font-size: 15px;
+}

@@ -33,7 +33,17 @@ Fonts
 .holder {
   padding: 1em 0;
 }
+.dev-img {
+  width:50%;
+  display:block !important;
+  margin: auto auto !important;
+}
+@media (max-width:744px) {
+.dev-img {
+  width: 100% !important;
+}
 
+}
 .clear {
   padding: 0 !important;
 }
@@ -67,7 +77,9 @@ Colours
   background: linear-gradient(to right, #FFC107 24%, #ffffff 24%);
   height: 100vh;
 }
-
+.bubble-basic {
+  background: #11A880 !important;
+}
 /*texts*/
 .b-black {
   color: #000000 !important;
@@ -148,7 +160,7 @@ Buttons
 
 .btn-submit {
   background: #000;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 14px 25px;
   font-size: 14px;
 }
@@ -219,7 +231,17 @@ Buttons
   fill: #000000;
 }
 
-/* :::section headers ::: */
+/* :::sections ::: */
+
+.left {
+  height: 100vh;
+  padding: 319px 0 0 80px !important; 
+}
+.mid {
+  position: relative;
+  height: 100vh;
+  padding-top: 230px;
+}
 .bubble-section {
   padding: 2em 6rem;
 }
