@@ -1,0 +1,22 @@
+before_script:
+  - echo "Before script"
+deployTest:
+  stage: deploy
+  only:
+    refs:
+      - master
+  script:
+    - echo "Deploying.."
+    - cd ../
+    - cp -R bubble.ng/. /var/www/html/test/bubble_landing/
+    - echo "Deployed... "
+deployLive:
+  stage: deploy
+  only:
+    refs:
+      - production
+  script:
+    - echo "Deploying.."
+    - cd ../
+    - cp -R bubble.ng/. /var/www/html/live/bubble_landing/
+    - echo "Deployed... "
