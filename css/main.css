@@ -144,7 +144,7 @@ Hire
 ========*/
 
 .hire-info {
-  padding: 16rem 6.8rem;
+  padding: 10rem 5.5rem;
   color: #000;
   height: 100vh;
   overflow: hidden;
@@ -158,16 +158,20 @@ Hire
 }
 .hire-info h3 {
   font-size: 22px;
-  font-weight: bolder !important;
+  margin-bottom: 54px;
+  font-weight: 700   !important;
 }
 .hire-info p {
   font-size: 16px;
 } 
 .bubble-form-area {
-  padding: 16rem 3rem;
+  padding: 10rem 3rem;
   height: 100vh;
   position: relative;
   overflow: hidden;
+}
+.hire-form .bubble-form-area {
+  padding: 12rem 3rem;
 }
 
 @media (max-width:744px) {
@@ -194,10 +198,15 @@ Hire
   border: none;
   margin-top: 24px;
   color: #000000;
+  font-weight: 900;
   font-size: 14px;
   font-family:'consola-bold', sans-serif;
 }
-.bubble-form-area input:focus {outline: none !important;}
+.bubble-form-area input:focus {
+  outline: none !important; 
+  background-color:rgba(0, 0, 0, 0.2);
+  color: #000000;
+}
 .bubble-form-area .text-area{
   background-color:rgba(0, 0, 0, 0.2);
   margin-top: 24px;
@@ -206,6 +215,8 @@ Hire
   box-sizing: border-box;
   border: none;
   height:61px;
+  color: #000000;
+  font-weight: 900;
 }
 
 .bubble-form-area .form-control::placeholder { 
@@ -218,7 +229,7 @@ Hire
   color:rgba(0, 0, 0, 0.4);
   font-size: 14px;
   font-family: 'consola', sans-serif;
- }
+ }  
 
  .bubble-form-area .form-check {
   display: block;
@@ -249,7 +260,7 @@ Hire
 }
 
 .bubble-form-area .form-check input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #000000;
 }
 
 .bubble-form-area .checkmark:after {
@@ -277,6 +288,9 @@ Hire
  font-size: 13px;
  color:black;
 }
+.bubble-form-area .form-check-label em {
+  font-weight: 900;
+}
 .bubble-form-area .bubble-more {
   position: absolute;
   padding:3rem;
@@ -284,6 +298,21 @@ Hire
   left:0;
   bottom: 0;
   color: #ffffff;
+  display: flex;
+}
+
+.bubble-form-area .bubble-more img {
+  height: 71px;
+  width: 71px;
+  object-fit: contain;
+}
+.bubble-form-area .bubble-more h4 {
+  font-size:15px;
+  font-weight: 800;
+  line-height: 23px;
+}
+.bubble-form-area .bubble-more p {
+  font-size: 14px;
 }
 
 @media(max-width:744px) {
