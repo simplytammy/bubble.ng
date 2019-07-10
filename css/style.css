@@ -159,6 +159,7 @@ Colours
     height: 30px;
     width: 23px;
     background-size: contain;
+    display:none;
 }
 
 .carousel-control-prev-icon {
@@ -168,6 +169,7 @@ Colours
     background-size: contain;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    display:none;
 }
 
 /*=======
