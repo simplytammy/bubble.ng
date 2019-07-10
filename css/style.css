@@ -241,6 +241,7 @@ Buttons
 .btn-submit {
     background: #000;
     color: #ffffff !important;
+    cursor: pointer;
     padding: 14px 25px;
     font-size: 14px;
 }
