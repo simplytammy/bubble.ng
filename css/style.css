@@ -1,6 +1,7 @@
 /*=========
 Fonts
 ========*/
+
 @font-face {
     font-family: 'consola';
     src: url("../font/CONSOLA.TTF");
@@ -21,10 +22,8 @@ Fonts
     src: url("../font/AvenirLTStd-Black.woff");
 }
 
-
 .container-fluid {
     width: 100%;
-    min-height: 250px;
     padding-right: 0 !important;
     padding-left: 0 !important;
     margin-right: auto;
@@ -35,27 +34,30 @@ Fonts
     .container-fluid {
         min-height: 120px;
     }
+    .btn-hire,
+    .btn-work {
+        display: block !important;
+        margin: 10px auto;
+    }
 }
 
 .holder {
     padding: 1em 0;
 }
 
-.dev-img {
-    width: 100%;
-    height: 128px;
+.space-img {
+    width: 80%;
     object-fit: contain;
     display: block !important;
-    margin: 10px auto !important;
+    margin: 5px 0 !important;
     border-radius: 4px;
 }
 
 @media (max-width:744px) {
-    .dev-img {
-        width: 80% !important;
+    .space-img {
+        width: 100% !important;
         height: auto;
     }
-
 }
 
 .clear {
@@ -65,8 +67,21 @@ Fonts
 .bubble-link {
     text-decoration: underline;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 16px !important;
     transition: .5s ease;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
+
+.bar {
+    color: #000;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 5px 0;
+    width: 21px;
 }
 
 .bubble-link:hover {
@@ -83,7 +98,9 @@ Fonts
 /*===========
 Colours
 =========*/
+
 /*backgrounds*/
+
 .bubble-yellow {
     background: #FFC107;
 }
@@ -107,6 +124,7 @@ Colours
 }
 
 /*texts*/
+
 .b-black {
     color: #000000 !important;
 }
@@ -134,22 +152,19 @@ Colours
 }
 
 .bg-project-1 {
-    background: linear-gradient(rgba(17, 168, 128, 0.85), rgb(17, 168, 128)),
-        url(/img/coincasa.jpg);
+    background: linear-gradient(rgba(17, 168, 128, 0.85), rgb(17, 168, 128)), url(/img/coincasa.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .bg-project-2 {
-    background: linear-gradient(rgba(42, 56, 48, 0.9), rgb(59, 82, 69)),
-        url(/assets/image/website-template-2.jpg);
+    background: linear-gradient(rgba(42, 56, 48, 0.9), rgb(59, 82, 69)), url(/assets/image/website-template-2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .bg-project-3 {
-    background: linear-gradient(rgba(42, 56, 48, 0.9), rgb(59, 82, 69)),
-        url(/assets/image/website-template-1.jpg);
+    background: linear-gradient(rgba(42, 56, 48, 0.9), rgb(59, 82, 69)), url(/assets/image/website-template-1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -159,7 +174,7 @@ Colours
     height: 30px;
     width: 23px;
     background-size: contain;
-    display:none;
+    display: none;
 }
 
 .carousel-control-prev-icon {
@@ -169,12 +184,13 @@ Colours
     background-size: contain;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    display:none;
+    display: none;
 }
 
 /*=======
 Buttons
 =======*/
+
 .bubble-button {
     border-radius: 4px;
     padding: 14px 13px;
@@ -196,7 +212,6 @@ Buttons
 .bubble-button:hover {
     color: #FFFFFF;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16) !important;
-
 }
 
 .btn-hire {
@@ -214,11 +229,12 @@ Buttons
 }
 
 .btn-hello {
-    padding: 14px 40px !important;
+    padding: 5px 20px !important;
     border-radius: 4px;
     color: #000000 !important;
     font-weight: 800;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    font-size: 14px;
 }
 
 .btn-call {
@@ -229,12 +245,34 @@ Buttons
     position: fixed;
     z-index: 1070;
     box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.16);
+}
 
+.arrow_right,
+.arrow_left {
+    height: 30px;
+    width: 20px;
+    z-index: 999;
+}
+
+.arrow_right {
+    margin-left: 6rem;
+}
+
+.arrow_left {
+    margin-right: 6rem;
 }
 
 @media (max-width:744px) {
     .btn-call {
         right: 21px;
+    }
+    .arrow_right,
+    .arrow_left {
+        margin: 0 !important;
+        position: absolute;
+        bottom: -30px;
+        width: 30px;
+        display: none;
     }
 }
 
@@ -246,19 +284,62 @@ Buttons
     font-size: 14px;
 }
 
+.checkbox-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkbox-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.checkbox-group input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
 /* ::::::Navbar:::::*/
+
 .navbar {
     padding: 2.5rem 10rem 1rem 6rem !important;
     position: fixed;
     width: 100%;
     z-index: 99 !important;
     background: transparent !important;
-    transition: display .6s;
+    transition: all .6s !important;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
     color: #000000 !important;
     transition: .8s ease;
+    font-size: 15px;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
@@ -281,16 +362,17 @@ Buttons
 }
 
 .navbar-nav .nav-item {
-    padding: 0 .7em !important
+    padding: 0 .7em;
 }
 
-
 /* :::::: Social icons ::::::*/
+
 .intro-social {
     height: 50vh;
     top: 20%;
     max-width: 7.3% !important;
-    background: #FFFFFF;
+    background: #fff;
+    width: 100px;
     position: fixed;
     right: 0;
     display: flex;
