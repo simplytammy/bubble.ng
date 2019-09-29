@@ -373,6 +373,7 @@ Buttons
     max-width: 7.3% !important;
     background: #fff;
     width: 100px;
+    padding-right: 3rem;
     position: fixed;
     right: 0;
     display: flex;
