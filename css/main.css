@@ -52,7 +52,7 @@ body {
     font-family: 'avenir-heavy' !important;
 }
 
-@media (max-width:744px) {
+@media (max-width:950px) {
     .index-intro .intro-mid,
     .index-intro .intro-mid .intro-mid-sub {
         height: auto !important;
@@ -172,7 +172,7 @@ body {
     justify-content: center;
 }
 
-@media (max-width: 744px) {
+@media (max-width: 950px) {
     .contributions {
         padding: 2rem .5rem;
     }
@@ -211,7 +211,7 @@ body {
     display: block;
 }
 
-@media (max-width: 744px) {
+@media (max-width: 950px) {
     .tools .tools-holder {
         padding: 1em 1rem;
     }
@@ -229,11 +229,11 @@ Hire
 .hire-info {
     padding: 10rem 2em 0 6.7rem;
     color: #000;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
 }
 
-@media (max-width:744px) {
+@media (max-width:950px) {
     .hire-info {
         padding: 8rem 2rem 0 2rem;
         height: auto !important;
@@ -266,7 +266,7 @@ Hire
     padding: 12rem 3rem;
 }
 
-@media (max-width:744px) {
+@media (max-width:950px) {
     .bubble-form-area {
         padding: 5rem 0;
         padding-bottom: 0 !important;
@@ -400,7 +400,7 @@ Hire
     bottom: 0;
     color: #ffffff;
     background: #000000;
-    display: flex;
+    display: none;
 }
 
 .bubble-form-area .bubble-more img {
@@ -419,7 +419,7 @@ Hire
     font-size: 14px;
 }
 
-@media(max-width:744px) {
+@media(max-width:950px) {
     .bubble-form-area .bubble-more {
         position: relative;
         padding: 1rem 2rem;
@@ -476,7 +476,7 @@ Hire
     outline: none;
 }
 
-@media (max-width: 744px) {
+@media (max-width: 950px) {
     .bubble-footer-form .textArea,
     .bubble-footer-form input.b-form-input {
         width: 100%;
@@ -522,7 +522,7 @@ Hire
     font-size: 16px;
 }
 
-@media (max-width: 744px) {
+@media (max-width: 950px) {
     .footer-text {
         padding: 2rem 0;
         margin: 3rem auto;

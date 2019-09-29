@@ -350,7 +350,7 @@ Buttons
     background: #FFFFFF !important;
 }
 
-@media (max-width:744px) {
+@media (max-width:950px) {
     .navbar {
         padding: 1rem 1rem !important;
         background: #FFFFFF !important;
