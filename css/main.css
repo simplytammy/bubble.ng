@@ -236,7 +236,7 @@ Hire
 @media (max-width:950px) {
     .hire-info {
         padding: 8rem 2rem 0 2rem;
-        height: auto !important;
+        min-height: auto !important;
     }
 }
 
