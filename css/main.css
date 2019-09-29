@@ -480,6 +480,7 @@ Hire
     .bubble-footer-form .textArea,
     .bubble-footer-form input.b-form-input {
         width: 100%;
+        padding: 10px 10px;
     }
 }
 
